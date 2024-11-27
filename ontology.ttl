@@ -1,0 +1,226 @@
+@prefix : <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/> .
+
+<http://www.city.ac.uk/ds/inm713/hadi_ghasemi/> rdf:type owl:Ontology ;
+                                                 :Creator "Created by hadi ghasemi"@en ;
+                                                 rdfs:comment "This is an antology about pizza domain"@en ;
+                                                 rdfs:label "version: 2.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/Creator
+:Creator rdf:type owl:AnnotationProperty ;
+         rdfs:label "food" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/has_item
+:has_item rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Restriction ;
+                        owl:onProperty :has_item ;
+                        owl:allValuesFrom :restaurant
+                      ] ;
+          rdfs:range [ rdf:type owl:Restriction ;
+                       owl:onProperty :has_item ;
+                       owl:someValuesFrom :menu_item
+                     ] .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/in_city
+:in_city rdf:type owl:ObjectProperty ;
+         rdfs:domain [ rdf:type owl:Restriction ;
+                       owl:onProperty :in_city ;
+                       owl:someValuesFrom :restaurant
+                     ] ;
+         rdfs:range [ rdf:type owl:Restriction ;
+                      owl:onProperty :in_city ;
+                      owl:allValuesFrom :city
+                    ] .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/in_country
+:in_country rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Restriction ;
+                          owl:onProperty :in_country ;
+                          owl:someValuesFrom :state
+                        ] ;
+            rdfs:range [ rdf:type owl:Restriction ;
+                         owl:onProperty :in_country ;
+                         owl:allValuesFrom :country
+                       ] .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/in_state
+:in_state rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Restriction ;
+                        owl:onProperty :in_state ;
+                        owl:someValuesFrom :city
+                      ] ;
+          rdfs:range [ rdf:type owl:Restriction ;
+                       owl:onProperty :in_state ;
+                       owl:allValuesFrom :state
+                     ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/has_address
+:has_address rdf:type owl:DatatypeProperty ;
+             rdfs:domain [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_address ;
+                           owl:allValuesFrom xsd:string
+                         ] .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/has_currency
+:has_currency rdf:type owl:DatatypeProperty ;
+              rdfs:domain [ rdf:type owl:Restriction ;
+                            owl:onProperty :has_currency ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/has_description
+:has_description rdf:type owl:DatatypeProperty ;
+                 rdfs:domain [ rdf:type owl:Restriction ;
+                               owl:onProperty :has_post_code ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/has_name
+:has_name rdf:type owl:DatatypeProperty ;
+          rdfs:domain [ rdf:type owl:Restriction ;
+                        owl:onProperty :has_post_code ;
+                        owl:allValuesFrom xsd:string
+                      ] .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/has_post_code
+:has_post_code rdf:type owl:DatatypeProperty ;
+               rdfs:domain [ rdf:type owl:Restriction ;
+                             owl:onProperty :has_post_code ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:integer
+                           ] .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/has_price
+:has_price rdf:type owl:DatatypeProperty ;
+           rdfs:domain [ rdf:type owl:Restriction ;
+                         owl:onProperty :has_address ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:float
+                       ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/city
+:city rdf:type owl:Class ;
+      rdfs:comment "a class to represent Cities" ;
+      rdfs:label "City" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/country
+:country rdf:type owl:Class ;
+         rdfs:comment "a class to represent countries" ;
+         rdfs:label "Country" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food
+:food rdf:type owl:Class ;
+      rdfs:comment "a class to represent foods" ;
+      rdfs:label "Food" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/menu_item
+:menu_item rdf:type owl:Class ;
+           rdfs:comment "a class to represent menu items" ;
+           rdfs:label "Menu_Items" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant
+:restaurant rdf:type owl:Class ;
+            rdfs:comment "a class to represent types of restaurants" ;
+            rdfs:label "Restaurant" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/state
+:state rdf:type owl:Class ;
+       rdfs:comment "a class to represent states" ;
+       rdfs:label "State" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza
+<http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :food ;
+                                                          rdfs:comment "a class to represent Pizza" ;
+                                                          rdfs:label "Pizza" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza/american
+<http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza/american> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza> ;
+                                                                   rdfs:comment "a class to represent American Pizza" ;
+                                                                   rdfs:label "American_Pizza" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza/italian
+<http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza/italian> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza> ;
+                                                                  rdfs:comment "a class to represent Italian Pizza" ;
+                                                                  rdfs:label "Italian_pizza" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza/margherita
+<http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza/margherita> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza> ;
+                                                                     rdfs:comment "a class to represent margherita pizza type" ;
+                                                                     rdfs:label "Margherita_Pizza" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types
+<http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types> rdf:type owl:Class ;
+                                                                           rdfs:comment "a class to represent restaurants" ;
+                                                                           rdfs:label "Restaurant_types" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types/bar
+<http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types/bar> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types> ;
+                                                                               rdfs:comment "a class to represent Bar" ;
+                                                                               rdfs:label "Bar" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types/caterers
+<http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types/caterers> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types> ;
+                                                                                    rdfs:comment "a class to represent caterers" ;
+                                                                                    rdfs:label "Caterers" .
+
+
+###  http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types/pizza_place
+<http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types/pizza_place> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant/restaurant_types> ;
+                                                                                       rdfs:comment "a class to represent Pizza Places" ;
+                                                                                       rdfs:label "Pizza_Placa" .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

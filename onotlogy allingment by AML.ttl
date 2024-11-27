@@ -1,0 +1,236 @@
+@prefix : <http://knowledgeweb.semanticweb.org/heterogeneity/alignment> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://knowledgeweb.semanticweb.org/heterogeneity/alignment> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1
+:entity1 rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2
+:entity2 rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentlevel
+:level rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap
+:map rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure
+:measure rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto1
+:onto1 rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto2
+:onto2 rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation
+:relation rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmenttype
+:type rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi1
+:uri1 rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi2
+:uri2 rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentxml
+:xml rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentAlignment
+:Alignment rdf:type owl:Class .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell
+:Cell rdf:type owl:Class .
+
+
+[ rdf:type :Alignment ;
+  :level "0" ;
+  :map [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/mushroom> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom> ;
+         :measure "0.9801"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/margherita> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita> ;
+         :measure "0.9801"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant_types/Food> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food> ;
+         :measure "0.9801"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food> ;
+         :measure "0.9801"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant_types/Pizza> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza> ;
+         :measure "0.9801"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza> ;
+         :measure "0.9801"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant_types/American> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#American> ;
+         :measure "0.9801"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/cheese> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/mushroom> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#MushroomTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/tomato> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/ham> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/gorgonzola> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#GorgonzolaTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/mozzarella> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/spinach> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/onion> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/artichoke> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/chicken> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#ChickenTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/garlic> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/meat> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping> ;
+         :measure "0.9207"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant_types/%20and%20Food> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food> ;
+         :measure "0.9118"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/seafood> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping> ;
+         :measure "0.9108"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/sicilian> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana> ;
+         :measure "0.7564"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/restaurant_types/American%20%28new%29> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#American> ;
+         :measure "0.7011"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/pepperoni> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping> ;
+         :measure "0.6551"^^xsd:float ;
+         :relation "="
+       ] ,
+       [ rdf:type :Cell ;
+         :entity1 <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_types/parmesan> ;
+         :entity2 <http://www.co-ode.org/ontologies/pizza/pizza.owl#ParmesanTopping> ;
+         :measure "0.6273"^^xsd:float ;
+         :relation "="
+       ] ;
+  :onto1 "D:\\desk\\desktop\\projects\\kg\\new\\other files\\RDF.owl" ;
+  :onto2 "http://www.co-ode.org/ontologies/pizza" ;
+  :type "??" ;
+  :uri1 "D:\\desk\\desktop\\projects\\kg\\new\\other files\\RDF.owl" ;
+  :uri2 "http://www.co-ode.org/ontologies/pizza" ;
+  :xml "yes"
+] .
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
