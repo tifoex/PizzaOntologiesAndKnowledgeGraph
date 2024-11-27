@@ -1,0 +1,709 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="" IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentlevel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmenttype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentAlignment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentxml"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentAlignment"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483657"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483659"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483661"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483663"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483665"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+    </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentlevel"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal>0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483657"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483659"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483661"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483663"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483665"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto1"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal>D:\desk\desktop\projects\kg\tasks\task  5\output5.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto2"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal>http://www.co-ode.org/ontologies/pizza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmenttype"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal>11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi1"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal>D:\desk\desktop\projects\kg\tasks\task  5\output5.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi2"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal>http://www.co-ode.org/ontologies/pizza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentxml"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal>yes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/mushroom</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9801</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/margherita</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9801</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9801</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483657"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483657"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#Food</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483657"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9801</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483657"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483659"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/spinach</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483659"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483659"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483659"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483661"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/onion</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483661"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483661"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483661"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483663"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/artichoke</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483663"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483663"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483663"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483665"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/cheese</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483665"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483665"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483665"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/ham</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/mozzarella</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/chicken</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#ChickenTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/tomato</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/garlic</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/gorgonzola</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#GorgonzolaTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/meat</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9207</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/seafood</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9108</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/sicilian</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.7564</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/pepperoni</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.6551</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/parmesan</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#ParmesanTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.6273</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/countries</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#Country</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.6181</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+        <IRI>http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/jalapeno</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+        <IRI>http://www.co-ode.org/ontologies/pizza/pizza.owl#JalapenoPepperTopping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.6085</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+        <Literal>=</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

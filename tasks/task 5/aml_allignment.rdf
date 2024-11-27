@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>D:\desk\desktop\projects\kg\tasks\task  5\output5.owl</onto1>
+	<onto2>http://www.co-ode.org/ontologies/pizza</onto2>
+	<uri1>D:\desk\desktop\projects\kg\tasks\task  5\output5.owl</uri1>
+	<uri2>http://www.co-ode.org/ontologies/pizza</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/mushroom"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/margherita"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#Food"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/spinach"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/onion"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/artichoke"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/cheese"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/ham"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/mozzarella"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/chicken"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#ChickenTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/tomato"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/garlic"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/gorgonzola"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#GorgonzolaTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/meat"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9207</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/seafood"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9108</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/sicilian"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7564</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/pepperoni"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6551</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/parmesan"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#ParmesanTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6273</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/countries"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#Country"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6181</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/jalapeno"/>
+			<entity2 rdf:resource="http://www.co-ode.org/ontologies/pizza/pizza.owl#JalapenoPepperTopping"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6085</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

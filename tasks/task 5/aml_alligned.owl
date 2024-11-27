@@ -1,0 +1,212 @@
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentlevel
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmentlevel> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto1
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto1> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto2
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto2> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmenttype
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmenttype> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi1
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi1> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi2
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi2> rdf:type owl:AnnotationProperty .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentxml
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmentxml> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentAlignment
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmentAlignment> rdf:type owl:Class .
+
+
+###  http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell
+<http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> rdf:type owl:Class .
+
+
+[ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentAlignment> ;
+  <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentlevel> "0" ;
+  <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmap> [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/mushroom> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Mushroom> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9801"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/margherita> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Margherita> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9801"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food/pizza> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Pizza> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9801"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/food> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Food> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9801"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/spinach> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#SpinachTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/onion> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#OnionTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/artichoke> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#ArtichokeTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/cheese> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#CheeseTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/ham> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#HamTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/mozzarella> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MozzarellaTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/chicken> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#ChickenTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/tomato> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#TomatoTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/garlic> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#GarlicTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/gorgonzola> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#GorgonzolaTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/meat> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#MeatTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9207"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/seafood> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#FishTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.9108"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/sicilian> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Siciliana> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.7564"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/pepperoni> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#PepperTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.6551"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/parmesan> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#ParmesanTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.6273"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/countries> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#Country> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.6181"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ,
+                                                                   [ rdf:type <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentCell> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity1> <http://www.city.ac.uk/ds/inm713/hadi_ghasemi/pizza_type/jalapeno> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmententity2> <http://www.co-ode.org/ontologies/pizza/pizza.owl#JalapenoPepperTopping> ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentmeasure> "0.6085"^^xsd:float ;
+                                                                     <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentrelation> "="
+                                                                   ] ;
+  <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto1> "D:\\desk\\desktop\\projects\\kg\\tasks\\task  5\\output5.owl" ;
+  <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentonto2> "http://www.co-ode.org/ontologies/pizza" ;
+  <http://knowledgeweb.semanticweb.org/heterogeneity/alignmenttype> "11" ;
+  <http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi1> "D:\\desk\\desktop\\projects\\kg\\tasks\\task  5\\output5.owl" ;
+  <http://knowledgeweb.semanticweb.org/heterogeneity/alignmenturi2> "http://www.co-ode.org/ontologies/pizza" ;
+  <http://knowledgeweb.semanticweb.org/heterogeneity/alignmentxml> "yes"
+] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
